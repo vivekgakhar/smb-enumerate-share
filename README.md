@@ -1,4 +1,4 @@
-# smb-enumerate-shares
+# smb-enumerate-share
 > Enumeration of SMB shares for Node.js
 
 smb-enumerate-share provides a single function that takes a number of parameters and will return a promise with the available shares on the provided server
@@ -33,10 +33,10 @@ This returns a **promise** resolving in an **array** of share objects. Each obje
 
 ## Examples
 ```js
-const smbEnumerateShares = require('smb-enumerate-share')
+const smbEnumerateShare = require('smb-enumerate-share')
 
 // enumerate shares on host 'myserver'
-smbEnumerateShares({host: 'myserver'})
+smbEnumerateShare({host: 'myserver'})
   .then(shares => {
     for(let share of shares) {
       console.log(share.name)
